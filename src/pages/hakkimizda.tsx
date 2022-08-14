@@ -1,7 +1,7 @@
 import AboutUs from "../img/AboutUs";
 import QuestionAnswer from "../img/QuestionAnswer";
 
-export default function AboutUsPage() {
+export default function Hakkımızda() {
   return (
     <div className="flex flex-col ">
       <div className="p-5 text-gray-400 bg-gray-100 ">

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import carInsurance from "../../public/carInsurance.png";
 
@@ -23,13 +24,13 @@ export default function Header() {
             </svg>
           </label>
           <ul className="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-            <li>
-              <a className="justify-between">Hizmetlerimiz</a>
+            <li className="justify-between">
+              <Link href="/hizmetlerimiz">Hizmetlerimiz</Link>
             </li>
-            <li>
-              <a className="justify-between">
+            <li className="justify-between">
+              <Link href="/hakkimizda">
                 Hakkımızda
-                <svg
+                {/* <svg
                   className="fill-current"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -37,36 +38,38 @@ export default function Header() {
                   viewBox="0 0 24 24"
                 >
                   <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                </svg>
-              </a>
-              <ul className="p-2 bg-base-100">
+                </svg> */}
+              </Link>
+              {/* <ul className="p-2 bg-base-100">
                 <li>
                   <a>Hakkımızda</a>
                 </li>
                 <li>
                   <a>Sık Sorulan Sorular</a>
                 </li>
-              </ul>
+              </ul> */}
             </li>
 
             <li>
-              <a>İletişim</a>
+              <Link href="iletisim">İletişim</Link>
             </li>
           </ul>
         </div>
-        <a className="w-16 scale-90 sm:ml-28" href="/">
-          <Image src={carInsurance} />
-        </a>
+        <Link href="/">
+          <div className="w-16 scale-90 cursor-pointer sm:ml-28">
+            <Image src={carInsurance} />
+          </div>
+        </Link>
       </div>
       <div className="hidden navbar-center lg:flex">
         <ul className="p-0 menu menu-horizontal">
           <li>
-            <a>Hizmetlerimiz</a>
+            <Link href="/hizmetlerimiz">Hizmetlerimiz</Link>
           </li>
           <li>
-            <a>
+            <Link href="/hakkimizda">
               Hakkımızda
-              <svg
+              {/* <svg
                 className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -74,20 +77,20 @@ export default function Header() {
                 viewBox="0 0 24 24"
               >
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-              </svg>
-            </a>
-            <ul className="p-2 bg-base-100">
+              </svg> */}
+            </Link>
+            {/* <ul className="p-2 bg-base-100">
               <li className="hover-bordered">
-                <a>Hakkımızda</a>
+                <Link href="/hakkimizda">Hakkımızda</Link>
               </li>
               <li className="hover-bordered">
-                <a>Sık Sorulan Sorular</a>
+                <Link href="/faq">Sık Sorulan Sorular</Link>
               </li>
-            </ul>
+            </ul> */}
           </li>
 
           <li>
-            <a>İletişim</a>
+            <Link href="/iletisim">İletişim</Link>
           </li>
         </ul>
       </div>
