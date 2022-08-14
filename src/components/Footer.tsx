@@ -1,6 +1,6 @@
 import Image from "next/image";
 import carInsurance from "../../public/carInsurance.png";
-
+import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="flex flex-wrap p-10 sm:grid footer bg-base-200 text-base-content">
@@ -22,8 +22,12 @@ export default function Footer() {
       </div>
       <div>
         <span className="footer-title">ŞİRKET PROFİLİ</span>
-        <a className="link link-hover">Hakkımızda</a>
-        <a className="link link-hover">İletişim</a>
+        <span className="link link-hover">
+          <Link href="/hakkimizda">Hakkımızda</Link>
+        </span>
+        <span className="link link-hover">
+          <Link href="iletisim">İletişim</Link>
+        </span>
       </div>
       <div className="">
         <span className="footer-title">ŞARTLAR</span>
