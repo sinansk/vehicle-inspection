@@ -3,6 +3,7 @@ import { AppProps } from "next/app";
 import "../styles/index.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Newsletter from "../components/Newsletter";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <Header />
       <Component {...pageProps} />
+      <Newsletter />
       <Footer />
     </>
   );
