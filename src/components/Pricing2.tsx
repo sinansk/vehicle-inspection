@@ -10,7 +10,7 @@ export default function Pricing2() {
           <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 bg-white rounded-full "></div>
           <div className="absolute top-0 flex items-center justify-center w-16 h-16 transform -translate-y-1/2 rounded-full hover:bg-sky-900 bg-gray-50 "></div>
           <h2 className="mt-10 text-4xl font-bold hover:text-white">149 TL</h2>
-          <div className="flex w-full my-5 border-t-[1px] border-slate-500 border-dashed "></div>
+          <div className="flex w-full my-5 border-t-[1px] border-slate-300 border-dashed "></div>
           <div className="flex flex-col items-center gap-2">
             <p>Yearly car inspection</p>
             <p>Outside car wash</p>

@@ -28,7 +28,7 @@ export default function Header() {
           <a>Register</a>
         </div>
       </div>
-      <div className="sticky top-0 left-0 z-50 text-sm font-semibold bg-white border-b-2 xl:px-32 border-slate-800 font-sans-serif navbar text-slate-900 backdrop-blur-2xl bg-base-100/90 lg:px-20 sm:h-[14vh]">
+      <div className="sticky top-0 left-0 z-50 text-sm font-semibold bg-white border-b-2 xl:px-32 border-slate-800 font-sans-serif navbar text-slate-900 backdrop-blur-2xl  lg:px-20 sm:h-[14vh]">
         <div className="navbar-start">
           <div className="dropdown">
             <label className="btn btn-ghost lg:hidden">
