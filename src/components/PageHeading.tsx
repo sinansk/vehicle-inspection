@@ -6,7 +6,7 @@ export default function PageHeading({ pageName }) {
   return (
     <div>
       <div className="w-full h-24 overflow-hidden bg-black sm:h-64">
-        <div className="w-full h-24 object-fit opacity-30">
+        <div className="flex w-full h-full object-fit opacity-30">
           <Image src={breadcrumb} />
         </div>
       </div>

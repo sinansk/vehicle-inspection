@@ -34,8 +34,8 @@ export default function Hakkımızda() {
               muayene istasyonunda tekrara düşmemek için zaman kazanmış
               olursunuz.
             </p>
-            <div className="flex gap-3 text-xs text-center text-white">
-              <div className="relative flex items-center justify-center w-24 h-24 border-2 border-slate-900">
+            <div className="flex gap-3 my-5 text-xs text-center text-white">
+              <div className="relative flex items-center justify-center w-24 h-24 border-[1px] border-slate-900">
                 <div className="w-8 ">
                   <Image src={tools} />
                 </div>
@@ -44,7 +44,7 @@ export default function Hakkımızda() {
                 </div>
               </div>
 
-              <div className="relative flex items-center justify-center w-24 h-24 border-2 border-slate-900">
+              <div className="relative flex items-center justify-center w-24 h-24 border-[1px] border-slate-900">
                 <div className="w-8 ">
                   <Image src={tire} />
                 </div>
@@ -52,7 +52,7 @@ export default function Hakkımızda() {
                   WHEELS
                 </div>
               </div>
-              <div className="relative flex items-center justify-center w-24 h-24 border-2 border-slate-900">
+              <div className="relative flex items-center justify-center w-24 h-24 border-[1px] border-slate-900">
                 <div className="w-8 ">
                   <Image src={carBattery} />
                 </div>
@@ -60,7 +60,7 @@ export default function Hakkımızda() {
                   LIQUIDS
                 </div>
               </div>
-              <div className="relative flex items-center justify-center w-24 h-24 border-2 border-slate-900">
+              <div className="relative flex items-center justify-center w-24 h-24 border-[1px] border-slate-900">
                 <div className="w-8 ">
                   <Image src={carKey} />
                 </div>
