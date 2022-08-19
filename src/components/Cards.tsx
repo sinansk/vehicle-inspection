@@ -2,6 +2,7 @@ import Image from "next/image";
 import beetle from "../../public/beetle.png";
 import tools from "../../public/tools.png";
 import tirePressure from "../../public/tirePressure.png";
+
 export default function Cards() {
   return (
     <div className="grid items-center flex-auto p-5 font-sans font-thin text-gray-400 bg-gray-100 justify-evenly lg:flex gap-7 sm:p-20 xl:px-32">
@@ -25,7 +26,10 @@ export default function Cards() {
           </div>
         </div>
       </div>
-      <div className="z-10 flex flex-col items-center transition-all duration-500 bg-white rounded-none shadow-xl sm:-mt-32 hover:scale-110">
+      <div
+        id="1"
+        className="z-10 flex flex-col items-center transition-all duration-500 bg-white rounded-none shadow-xl sm:-mt-32 hover:scale-110"
+      >
         <figure className="px-10 pt-10 ">
           <div className="flex items-center justify-center w-24 h-24 border-2 rounded-full border-zinc-200">
             <div className="flex items-center justify-center w-20 h-20 border-2 rounded-full border-zinc-200">
@@ -48,7 +52,10 @@ export default function Cards() {
           </div>
         </div>
       </div>
-      <div className="z-10 flex flex-col items-center transition-all duration-500 bg-white rounded-none shadow-xl sm:-mt-32 hover:scale-110">
+      <div
+        id="2"
+        className="z-10 flex flex-col items-center transition-all duration-500 bg-white rounded-none shadow-xl sm:-mt-32 hover:scale-110"
+      >
         <figure className="px-10 pt-10 ">
           <div className="flex items-center justify-center w-24 h-24 border-2 rounded-full border-zinc-200">
             <div className="flex items-center justify-center w-20 h-20 border-2 rounded-full border-zinc-200">

@@ -3,7 +3,15 @@ import smile from "../../public/smile.png";
 import checkMark from "../../public/checkMark.png";
 import medal from "../../public/medal.png";
 import world from "../../public/world.png";
+import { useEffect, useState } from "react";
 export default function Stats2() {
+  const [stats, setStats] = useState({
+    customer: 6000,
+    successRate: 0,
+    leading: 0,
+    city: 0,
+  });
+
   return (
     <div className="grid flex-wrap items-center gap-3 p-5 xl:px-32 lg:flex sm:p-20 justify-evenly bg-gray-50">
       <div className="flex flex-col items-center w-64 h-56 font-semibold text-center text-black bg-white xl:w-72 xl:h-68 justify-evenly">
