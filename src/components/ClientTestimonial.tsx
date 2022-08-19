@@ -120,7 +120,7 @@ export default function ClientTestimonial() {
               <div className="items-center text-center card-body h-3/5 max-h-3/5">
                 <h2 className="card-title">Sonunda buldum!</h2>
                 <p>
-                  Hep düşünüyordum keşke araç ramuayene tarihini hatırlatan bir
+                  Hep düşünüyordum keşke araç muayene tarihini hatırlatan bir
                   hizmet olsa diye, sonunda buldum. Yoğunluktan dolayı aracımın
                   muayenesini hiç bir zaman hatırlayamadım ve gecikme cezalarına
                   mahkum kaldım. Randevumu burdan alarak büyük bir sorunumu
