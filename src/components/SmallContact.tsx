@@ -9,8 +9,8 @@ export default function SmallContact() {
           <div className="w-20 h-1 mx-auto mt-5 bg-slate-800"></div>
         </div>
         <p className="text-gray-500">
-          Soru, görüş ve önerileriniz için yanda bulunan iletişim formundan
-          bizlere ulaşabilirsiniz.
+          Soru, görüş ve önerileriniz için iletişim formundan bizlere
+          ulaşabilirsiniz.
         </p>
       </div>
       <div className="h-full col-span-2">

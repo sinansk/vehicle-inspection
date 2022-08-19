@@ -154,7 +154,7 @@ export default function ClientTestimonial() {
               </div>
 
               <div className="relative items-center text-center text-white bg-black border-2 border-t-0 border-white card-body max-h-2/5 h-2/5 group-hover:border-sky-900 b-rounded-sm">
-                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full group-hover:border-sky-690000 border-zinc-200">
+                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full group-hover:border-sky-900 border-zinc-200">
                   <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200 group-hover:border-sky-900">
                     <div className="w-16 m-auto ">
                       <Image src={man2} />

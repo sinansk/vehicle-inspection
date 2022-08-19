@@ -400,16 +400,27 @@ export default function Hakkımızda() {
       </div>
       <div className="p-5 text-gray-600 bg-gray-100 xl:px-32 sm:p-20">
         <div className="mb-7">
-          <h2 className="text-3xl font-bold text-center">ŞİRKET TARİHİ</h2>
+          <h2 className="text-3xl font-bold text-center">
+            Muayene Tarihini Düşünmeye Son!
+          </h2>
         </div>
         <div className="flex flex-col grid-cols-2 gap-3 sm:grid">
           <div>
-            <p className="text-gray-500">
-              Kaçırılan randevular, yaşam zamanımızı boşa harcar ve gereksiz
-              strese neden olur. Randevu Hatırlatıcısını kullanarak sizi bu
-              stresten uzaklaştırıyoruz. Randevu Hatırlatıcı zamanınızı ve
-              paranızı korumanıza yardımcı olur.
-            </p>
+            <ul className="text-gray-500 list-disc">
+              <li>
+                Bize plaka ve iletişim bilgilerinizi yazın araç muayene
+                tarihinizi öğrenip o tarihe hatırlatma oluşturalım.
+              </li>
+              <li>
+                Randevu tarihinden 1 hafta önce hatırlatalım ve muayene giderken
+                yanınızda olması gerekenlerin listesini gönderelim.
+              </li>
+              <li>
+                Randevu günü tekrar hatırlatalım ve eksiksiz bir şekilde
+                muayeneden geçmenize destek olalım.
+              </li>
+            </ul>
+            <p className="text-gray-500"></p>
             <br></br>
             <h3 className="font-semibold text-slate-700">
               Belirtilen Tarihe Sorunsuz & Hızlı Hatırlatma

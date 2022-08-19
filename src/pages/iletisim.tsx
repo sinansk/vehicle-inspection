@@ -55,10 +55,7 @@ function ContactPage() {
           </div>
           <div className="col-span-2 border-[1px] border-gray-300 text-gray-400  p-8 flex flex-col justify-between">
             <h3 className="text-2xl font-semibold text-slate-600">İletişim</h3>
-            <p>
-              If you have any questions simply use the following contact
-              details.
-            </p>
+            <p>Aşağıdaki iletişim adreslerinden de bizlere ulaşabilirsiniz.</p>
 
             <div className="flex items-center">
               <div className="w-4 mt-1 mr-1">

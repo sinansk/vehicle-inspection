@@ -3,8 +3,15 @@ import Image from "next/image";
 import carInsurance from "../../public/carInsurance.png";
 import phoneCall from "../../public/phoneCall.png";
 import email from "../../public/email.png";
+import { useState } from "react";
 
 export default function Header() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const handleNav = () => {
+    console.log("I got clicked", isNavOpen);
+    setIsNavOpen((prev) => !prev);
+  };
   return (
     <>
       <div className="flex flex-wrap items-center justify-between text-center text-gray-400 xl:px-32 min-h-12 lg:min-h-[5vh] sm:px-20 bg-slate-800">
@@ -31,7 +38,7 @@ export default function Header() {
       <div className="sticky top-0 left-0 z-50 text-sm font-semibold bg-white xl:px-32  font-sans-serif navbar text-slate-900 backdrop-blur-2xl  lg:px-20 sm:h-[14vh]">
         <div className="navbar-start">
           <div className="dropdown">
-            <label className="btn btn-ghost lg:hidden">
+            <label className="btn btn-ghost lg:hidden" onClick={handleNav}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-5 h-5"
@@ -47,7 +54,11 @@ export default function Header() {
                 />
               </svg>
             </label>
-            <ul className="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+            <ul
+              className={`${
+                !isNavOpen ? `hidden` : `flex`
+              } p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52`}
+            >
               <li className="justify-between">
                 <Link href="/">ANA SAYFA</Link>
               </li>

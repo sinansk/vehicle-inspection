@@ -16,12 +16,14 @@ import SmallContact from "../components/SmallContact";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import PageHeading from "../components/PageHeading";
+import Pricing2 from "../components/Pricing2";
 export default function Home() {
   return (
     <div className="w-full h-full overflow-x-hidden bg-gray-50">
       <Slider />
       {/* <Info /> */}
-      <Cards />
+      {/* <Cards /> */}
+      <Pricing2 />
       <About />
       <WhatWeDo />
       <Stats2 />
