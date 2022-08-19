@@ -9,11 +9,8 @@ export default function SmallContact() {
           <div className="w-20 h-1 mx-auto mt-5 bg-slate-800"></div>
         </div>
         <p className="text-gray-500">
-          Soru görüş ve önerileriniz için yanda bulunan iletişim formundan
+          Soru, görüş ve önerileriniz için yanda bulunan iletişim formundan
           bizlere ulaşabilirsiniz.
-          {/* That this group would somehow form a family that is the way we all
-          became the Brady Bunch a break from worries sure would help a lot
-          michael. */}
         </p>
       </div>
       <div className="h-full col-span-2">

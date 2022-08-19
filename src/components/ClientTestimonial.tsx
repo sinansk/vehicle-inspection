@@ -1,161 +1,168 @@
 import Image from "next/image";
 import carMechanic from "../../public/carMechanic.jpg";
 import beetle from "../../public/beetle.png";
+import man from "../../public/man.png";
+import man2 from "../../public/man2.png";
+import woman from "../../public/woman.png";
+import woman2 from "../../public/woman2.png";
 import Link from "next/link";
 export default function ClientTestimonial() {
   return (
     <div className="grid gap-3 p-5 text-center bg-black sm:p-20 xl:px-32">
-      <p className="text-white">WHO WE ARE</p>
-      <h2 className="text-3xl font-bold text-white">CLIENT TESTIMONIALS</h2>
+      <p className="text-white">ÖNE ÇIKAN</p>
+      <h2 className="text-3xl font-bold text-white">KULLANICI YORUMLARI</h2>
 
       <div className="w-full carousel">
         <div id="item1" className="w-full carousel-item">
           <div className="flex items-center gap-5 justify-evenly ">
-            <div className="min-h-full gap-5 mx-3 bg-white shadow-xl sm:mx-0 sm:w-1/2 text-slate-400 card">
+            <div className="min-h-full gap-5 mx-3 text-gray-500 bg-white shadow-xl group sm:mx-0 sm:w-1/2 card">
               <div className="items-center text-center card-body h-3/5">
-                <h2 className="card-title">Shoes!</h2>
+                <h2 className="card-title">Mükemmel Çözüm!</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-                  culpa ipsam, repellat reiciendis voluptatem error voluptatibus
-                  itaque facilis alias quod ullam enim dolore tempore minima
-                  quam animi amet recusandae corporis?
+                  İş güç yoğunluğundan aracımın muayene tarihini her zaman
+                  unutuyordum. Çevirmede yediğim cezalardan ve muayene gecikme
+                  bedelleri canımı sıkmaya başlamıştı. Burayı bulmamla hayatımda
+                  büyük bir sorundan kurtulmuş oldum.
                 </p>
               </div>
 
-              <div className="relative items-center text-center text-white border-2 bg-black card-body h-2/5 hover:border-sky-600 border-white b-rounded-[10px] border-t-0">
-                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full border-zinc-200">
-                  <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200">
-                    <div className="w-8 m-auto ">
-                      <Image src={beetle} />
+              <div className="relative items-center text-center text-white bg-black border-2 border-t-0 border-white card-body max-h-2/5 h-2/5 group-hover:border-sky-900 b-rounded-sm">
+                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full group-hover:border-sky-900 border-zinc-200">
+                  <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200 group-hover:border-sky-900">
+                    <div className="w-16 m-auto ">
+                      <Image src={man} />
                     </div>
                   </div>
                 </div>
-                <h2 className="mt-3 card-title">SHANE MICHEAL</h2>
-                <p>Ceo tata Group</p>
+                <h2 className="mt-3 card-title">HALUK YILMAZ</h2>
+                <p>Esnaf</p>
               </div>
             </div>
-            <div className="hidden w-1/2 min-h-full gap-5 bg-white shadow-xl sm:flex text-slate-400 card">
-              <div className="items-center text-center card-body h-3/5">
-                <h2 className="card-title">Shoes!</h2>
+            <div className="hidden min-h-full gap-5 mx-3 text-gray-500 bg-white shadow-xl sm:flex card group sm:mx-0 sm:w-1/2 ">
+              <div className="items-center text-center card-body max-h-3/5 h-3/5">
+                <h2 className="card-title">Tam Zamanında!</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusamus enim velit corporis molestiae dolores hic, deserunt
-                  odio iste! Sequi modi inventore labore beatae alias ab est
-                  quisquam adipisci. Velit, aut?
+                  Özellikle biz kadınlar araç muayene tarihlerini
+                  unutabiliyoruz. Bu hizmet tam bana göre. Randevumu burdan
+                  aldım ve aracımın muayene tarihini düşünmekten kurtuldum.
+                  Kendileri sağolsun muayene tarihi yaklaştığında SMS ve Mail
+                  ile hatırlatıyorlar!
                 </p>
               </div>
 
-              <div className="relative items-center text-center text-white bg-black border-2 border-t-0 border-white card-body h-2/5 hover:border-sky-600 b-rounded-md">
-                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full border-zinc-200">
-                  <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200">
-                    <div className="w-8 m-auto ">
-                      <Image src={beetle} />
+              <div className="relative items-center text-center text-white bg-black border-2 border-t-0 border-white card-body h-2/5 max-h-2/5 group-hover:border-sky-900 b-rounded-sm">
+                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full group-hover:border-sky-900 border-zinc-200">
+                  <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200 group-hover:border-sky-900">
+                    <div className="w-16 m-auto ">
+                      <Image src={woman} />
                     </div>
                   </div>
                 </div>
-                <h2 className="mt-3 card-title">SHANE MICHEAL</h2>
-                <p>Ceo tata Group</p>
+                <h2 className="mt-3 card-title">HATİCE ÇİFTÇİ</h2>
+                <p>Öğretmen</p>
               </div>
             </div>
           </div>
         </div>
         <div id="item2" className="w-full carousel-item">
-          <div className="flex justify-between gap-8">
-            <div className="min-h-full gap-5 mx-3 bg-white shadow-xl sm:mx-0 sm:w-1/2 text-slate-400 card">
-              <div className="items-center text-center card-body h-3/5">
-                <h2 className="card-title">Shoes!</h2>
+          <div className="flex items-center gap-5 justify-evenly ">
+            <div className="min-h-full gap-5 mx-3 text-gray-500 bg-white shadow-xl group sm:mx-0 sm:w-1/2 card">
+              <div className="items-center text-center card-body max-h-3/5 h-3/5">
+                <h2 className="card-title">Aradığım Hizmet</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Dolores nemo explicabo quibusdam architecto minima? Eligendi
-                  quas, porro placeat sequi eveniet nisi cupiditate ea officia
-                  delectus magni quod fuga? Temporibus, adipisci?
+                  Babam aracının muayene tarihini hep geciktiriyordu. İnternette
+                  dolaşırken buraya denk geldim ve işte aradığım çözüm bu dedim.
+                  Artık muayene tarihini düşünmek zorunda değiliz. Ayrıca
+                  muayene randevusunu almak her zamankinden daha kolay ve hızlı.
                 </p>
               </div>
 
-              <div className="relative items-center text-center text-white border-2 bg-black card-body h-2/5 hover:border-sky-600 border-white b-rounded-[10px] border-t-0">
-                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full border-zinc-200">
-                  <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200">
-                    <div className="w-8 m-auto ">
-                      <Image src={beetle} />
+              <div className="relative items-center text-center text-white bg-black border-2 border-t-0 border-white card-body h-2/5 max-h-2/5 group-hover:border-sky-900 b-rounded-sm">
+                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full group-hover:border-sky-900 border-zinc-200">
+                  <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200 group-hover:border-sky-900">
+                    <div className="w-16 m-auto ">
+                      <Image src={woman2} />
                     </div>
                   </div>
                 </div>
-                <h2 className="mt-3 card-title">SHANE MICHEAL</h2>
-                <p>Ceo tata Group</p>
+                <h2 className="mt-3 card-title">SELİN DURMUŞOĞLU</h2>
+                <p>Hemşire</p>
               </div>
             </div>
-            <div className="hidden w-1/2 min-h-full gap-5 bg-white shadow-xl sm:flex text-slate-400 card">
-              <div className="items-center text-center card-body h-3/5">
-                <h2 className="card-title">Shoes!</h2>
+            <div className="hidden min-h-full gap-5 mx-3 text-gray-500 bg-white shadow-xl sm:flex card group sm:mx-0 sm:w-1/2 ">
+              <div className="items-center text-center card-body h-3/5 max-h-3/5">
+                <h2 className="card-title">Tavsiye Ederim!</h2>
                 <p>
-                  They were upfront and honest about everything and let me know
-                  what needed to done with out up selling me anything which was
-                  appreciated. Explain to you how all this mistaken ideas of
-                  denouncing and praising pain was born will give you a
-                  complete.
+                  Araç muayene işi benim için tam bir işkenceye dönüşmüştü.
+                  Gecikme cezalarına ödediğim paralar bu hizmet sayesinde cebime
+                  kaldı. Keşke daha önce keşfetseydim. Hizmetten son derece
+                  memnun kaldım ve herkese tavsiye ederim.
                 </p>
               </div>
 
-              <div className="relative items-center text-center text-white border-2 bg-black card-body h-2/5 hover:border-sky-600 border-white b-rounded-[10px] border-t-0">
-                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full border-zinc-200">
-                  <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200">
-                    <div className="w-8 m-auto ">
-                      <Image src={beetle} />
+              <div className="relative items-center text-center text-white bg-black border-2 border-t-0 border-white card-body max-h-2/5 h-2/5 group-hover:border-sky-900 b-rounded-sm">
+                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full group-hover:border-sky-900 border-zinc-200">
+                  <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200 group-hover:border-sky-900">
+                    <div className="w-16 m-auto ">
+                      <Image src={man2} />
                     </div>
                   </div>
                 </div>
-                <h2 className="mt-3 card-title">SHANE MICHEAL</h2>
-                <p>Ceo tata Group</p>
+                <h2 className="mt-3 card-title">CANER GÜLER</h2>
+                <p>Turizmci</p>
               </div>
             </div>
           </div>
         </div>
         <div id="item3" className="w-full carousel-item">
-          <div className="flex justify-between gap-8">
-            <div className="min-h-full gap-5 mx-3 bg-white shadow-xl sm:mx-0 sm:w-1/2 text-slate-400 card">
-              <div className="items-center text-center card-body h-3/5">
-                <h2 className="card-title">Shoes!</h2>
+          <div className="flex items-center gap-5 justify-evenly ">
+            <div className="min-h-full gap-5 mx-3 text-gray-500 bg-white shadow-xl group sm:mx-0 sm:w-1/2 card">
+              <div className="items-center text-center card-body h-3/5 max-h-3/5">
+                <h2 className="card-title">Sonunda buldum!</h2>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Dolore fugiat ullam quibusdam voluptates sit, vitae, ipsa
-                  odit, nulla velit incidunt repudiandae consectetur quas ab
-                  dolor. Architecto temporibus debitis dolore dolorum!
+                  Hep düşünüyordum keşke araç ramuayene tarihini hatırlatan bir
+                  hizmet olsa diye, sonunda buldum. Yoğunluktan dolayı aracımın
+                  muayenesini hiç bir zaman hatırlayamadım ve gecikme cezalarına
+                  mahkum kaldım. Randevumu burdan alarak büyük bir sorunumu
+                  çözmüş oldum. Sağolsunlar hatırlatıyorlar ve ben de randevumu
+                  buradan alıyorum.
                 </p>
               </div>
 
-              <div className="relative items-center text-center text-white border-2 bg-black card-body h-2/5 hover:border-sky-600 border-white b-rounded-[10px] border-t-0">
-                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full border-zinc-200">
-                  <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200">
-                    <div className="w-8 m-auto ">
-                      <Image src={beetle} />
+              <div className="relative items-center text-center text-white bg-black border-2 border-t-0 border-white card-body max-h-2/5 h-2/5 group-hover:border-sky-900 b-rounded-sm">
+                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full group-hover:border-sky-900 border-zinc-200">
+                  <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200 group-hover:border-sky-900">
+                    <div className="w-16 m-auto ">
+                      <Image src={man} />
                     </div>
                   </div>
                 </div>
-                <h2 className="mt-3 card-title">SHANE MICHEAL</h2>
-                <p>Ceo tata Group</p>
+                <h2 className="mt-3 card-title">ERKUT BİLGİÇ</h2>
+                <p>Esnaf</p>
               </div>
             </div>
-            <div className="hidden w-1/2 min-h-full gap-5 bg-white shadow-xl sm:flex text-slate-400 card">
-              <div className="items-center text-center card-body h-3/5">
-                <h2 className="card-title">Shoes!</h2>
+            <div className="hidden min-h-full gap-5 mx-3 text-gray-500 bg-white shadow-xl sm:flex card group sm:mx-0 sm:w-1/2 ">
+              <div className="items-center text-center card-body h-3/5 max-h-3/5">
+                <h2 className="card-title">Teşekkür Ederim</h2>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Vitae unde odit consectetur! Maxime commodi ad fugiat odio
-                  earum. Nam suscipit similique dicta mollitia quas earum
-                  nostrum aperiam excepturi facere distinctio!
+                  Araç muayene randevusu alırken hep zorlanıyordum. Gerek sistem
+                  yoğunluğu gerek başka sebepler olsun canımı sıkıyordu.
+                  İnternette ararken burasını keşfettim ve randevumu burdan
+                  sorunsuz ve hızlıca alabildim. Üstelik bir sonraki randevu
+                  tarihini de hatırlatıyorlarmış. Herşey için teşekkür ederim.
                 </p>
               </div>
 
-              <div className="relative items-center text-center text-white border-2 bg-black card-body h-2/5 hover:border-sky-600 border-white b-rounded-[10px] border-t-0">
-                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full border-zinc-200">
-                  <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200">
-                    <div className="w-8 m-auto ">
-                      <Image src={beetle} />
+              <div className="relative items-center text-center text-white bg-black border-2 border-t-0 border-white card-body max-h-2/5 h-2/5 group-hover:border-sky-900 b-rounded-sm">
+                <div className="absolute top-0 flex items-center justify-center w-20 h-20 transform -translate-y-1/2 border-2 rounded-full group-hover:border-sky-690000 border-zinc-200">
+                  <div className="flex items-center justify-center w-16 h-16 border-2 rounded-full border-zinc-200 group-hover:border-sky-900">
+                    <div className="w-16 m-auto ">
+                      <Image src={man2} />
                     </div>
                   </div>
                 </div>
-                <h2 className="mt-3 card-title">SHANE MICHEAL</h2>
-                <p>Ceo tata Group</p>
+                <h2 className="mt-3 card-title">ZİYA DEMİR</h2>
+                <p>Mühendis</p>
               </div>
             </div>
           </div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function About() {
@@ -17,12 +18,16 @@ export default function About() {
         istasyonlarında geciken her ay için ekstra %5 ceza uygulanmaktadır.
       </p>
       <div className="flex justify-center gap-5">
-        <button className="text-white rounded-none btn btn-primary">
-          WHAT CAN WE DO
-        </button>
-        <button className="text-white rounded-none btn btn-primary">
-          GET A QUOTE
-        </button>
+        <Link href="/hakkimizda">
+          <button className="text-white rounded-none btn btn-primary">
+            HAKKIMIZDA
+          </button>
+        </Link>
+        <Link href="/hizmetlerimiz">
+          <button className="text-white rounded-none btn btn-primary">
+            RANDEVU AL
+          </button>
+        </Link>
       </div>
     </div>
   );

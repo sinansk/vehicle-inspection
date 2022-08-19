@@ -40,7 +40,7 @@ export default function Hakkımızda() {
                   <Image src={tools} />
                 </div>
                 <div className="absolute bottom-0 h-4 transform translate-y-full bg-sky-900 w-14 ">
-                  REPAIR
+                  DESTEK
                 </div>
               </div>
 
@@ -49,7 +49,7 @@ export default function Hakkımızda() {
                   <Image src={tire} />
                 </div>
                 <div className="absolute bottom-0 h-4 transform translate-y-full bg-sky-900 w-14 ">
-                  WHEELS
+                  HIZLI
                 </div>
               </div>
               <div className="relative flex items-center justify-center w-24 h-24 border-[1px] border-slate-900">
@@ -57,7 +57,7 @@ export default function Hakkımızda() {
                   <Image src={carBattery} />
                 </div>
                 <div className="absolute bottom-0 h-4 transform translate-y-full bg-sky-900 w-14 ">
-                  LIQUIDS
+                  KOLAY
                 </div>
               </div>
               <div className="relative flex items-center justify-center w-24 h-24 border-[1px] border-slate-900">
@@ -65,7 +65,7 @@ export default function Hakkımızda() {
                   <Image src={carKey} />
                 </div>
                 <div className="absolute bottom-0 h-4 transform translate-y-full bg-sky-900 w-14 ">
-                  SECURITY
+                  GÜVENLİ
                 </div>
               </div>
             </div>
@@ -412,14 +412,14 @@ export default function Hakkımızda() {
             </p>
             <br></br>
             <h3 className="font-semibold text-slate-700">
-              We delliver high quality services
+              Belirtilen Tarihe Sorunsuz & Hızlı Hatırlatma
             </h3>
             <br></br>
             <p>
-              Randevu Hatırlatıcı size 1 hafta öncesinden Muayene Öncesi
-              Aracınızda Bulunması gereken Ekipmanlar ve Yanınızda Bulunması
-              Gereken Dokümanların Listesini SMS ve E-Mail olarak Size
-              Hatırlatır. Aracınızdaki eksiklikleri gidermek ve muayene
+              Randevu Hatırlatıcı size 1 hafta öncesinden muayene öncesi
+              Aracınızda Bulunması gereken ekipmanlar ve yanınızda bulunması
+              gereken dokümanların listesini SMS ve E-Mail olarak size
+              hatırlatır. Aracınızdaki eksiklikleri gidermek ve muayene
               istasyonunda tekrara düşmemek için zaman kazanmış olursunuz.
             </p>
           </div>

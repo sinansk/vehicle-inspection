@@ -87,6 +87,11 @@ export default function Header() {
               <Image src={carInsurance} />
             </div>
           </Link>
+          <Link href="/">
+            <p className="text-xl font-bold cursor-pointer">
+              HATIRLATMA SERVİSİ
+            </p>
+          </Link>
         </div>
         <div className="hidden navbar-center lg:flex">
           <ul className="p-0 menu menu-horizontal">

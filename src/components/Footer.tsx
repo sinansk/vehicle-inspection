@@ -14,8 +14,9 @@ export default function Footer() {
             <Image src={carInsurance} />
           </div>
           <p>
-            Praesent massa felis, mattis et tempor non, condimentum vel lectus.
-            in turpis leo. vestibulum a sagittis .
+            Randevu Hatırlatma servisi müşterilerimize yaklaşan randevularını,
+            otomatik olarak hatırlatmamıza olanak tanıyan akıllı bir iş
+            çözümüdür.
           </p>
         </div>
         <div className="sm:mx-auto">
