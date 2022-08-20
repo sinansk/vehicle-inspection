@@ -6,9 +6,16 @@ import man2 from "../../public/man2.png";
 import woman from "../../public/woman.png";
 import woman2 from "../../public/woman2.png";
 import Link from "next/link";
+import { useRef } from "react";
 export default function ClientTestimonial() {
+  const clientsRef = useRef();
+
   return (
-    <div className="grid gap-3 p-5 text-center bg-black sm:p-20 xl:px-32">
+    <div
+      className="grid gap-3 p-5 text-center bg-black sm:p-20 xl:px-32"
+      ref={clientsRef}
+      id="clientComments"
+    >
       <p className="text-white">ÖNE ÇIKAN</p>
       <h2 className="text-3xl font-bold text-white">KULLANICI YORUMLARI</h2>
 

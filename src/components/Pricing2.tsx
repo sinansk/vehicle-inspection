@@ -1,7 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-import beetle from "../../public/beetle.png";
-import { useState } from "react";
 export default function Pricing2() {
   return (
     <div className="grid items-center gap-10 p-5 mt-8 font-sans font-thin text-slate-600 justify-evenly lg:mt-0 lg:grid-cols-3 lg:gap-7 bg-gray-50 xl:px-32 sm:p-20">

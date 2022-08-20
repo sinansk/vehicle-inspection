@@ -1,11 +1,8 @@
 import Image from "next/image";
 import PageHeading from "../components/PageHeading";
-import carInsurance from "../../public/carInsurance.png";
 import pinBlue from "../../public/pinBlue.png";
 import phoneCallBlue from "../../public/phoneCallBlue.png";
 import emailBlue from "../../public/emailBlue.png";
-import stopwatch from "../../public/stopwatch.png";
-import Contact from "../img/Contact";
 
 function ContactPage() {
   return (
@@ -16,7 +13,7 @@ function ContactPage() {
           <h2 className="text-3xl font-bold ">BİZE ULAŞIN</h2>
         </div>
         <div className="flex flex-col grid-cols-6 gap-3 sm:grid">
-          <div className="col-span-4 gap-3 p-10 bg-gray-100 ">
+          <div className="col-span-4 gap-3 p-5 bg-gray-100 sm:p-10 ">
             <h2 className="flex mb-5 text-2xl">MESAJ GÖNDERİN</h2>
             <div className="flex flex-col grid-cols-2 gap-5 sm:grid">
               <input
@@ -92,48 +89,6 @@ function ContactPage() {
           </div>
         </div>
       </div>
-      {/* <div className="overflow-x-hidden mx-auto sm:w-5/6 flex flex-col text-lg sm:grid sm:grid-cols-2 items-center sm:gap-10  lg:h-[calc(100vh-4rem)]">
-        <div className="">
-          <Contact />
-        </div>
-        <div className="w-full py-5 shadow-lg card">
-          <form className="w-full m-auto sm:h-full" id="contactForm">
-            <label className="relative flex flex-col items-center" htmlFor="">
-              <h2 className="text-3xl font-bold text-primary">Bize Ulaşın</h2>
-              <div className="w-full max-w-xs form-control">
-                <label className="label">
-                  <span className="label-text text-slate-500">Adınız?</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="Ahmet"
-                  className="w-full max-w-xs bg-gray-100 input input-bordered focus:outline-primary"
-                />
-                <label className="label ">
-                  <span className="label-text text-slate-500">Mesajınız?</span>
-                </label>
-                <textarea
-                  className="bg-gray-100 textarea textarea-bordered focus:outline-primary"
-                  placeholder="Merhaba!"
-                ></textarea>
-                <label className="label">
-                  <span className="label-text text-slate-500">
-                    Email Adresiniz?
-                  </span>
-                </label>
-                <input
-                  type="email"
-                  placeholder="someone@123@mail.com"
-                  className="w-full max-w-xs bg-gray-100 input input-bordered focus:outline-primary"
-                />
-              </div>
-              <button className="px-8 py-3 mt-5 btn bg-primary hover:bg-primary-focus">
-                GÖNDER
-              </button>
-            </label>
-          </form>
-        </div>
-      </div> */}
     </div>
   );
 }

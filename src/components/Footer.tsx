@@ -5,6 +5,7 @@ import smartphone from "../../public/smartphone.png";
 import fax from "../../public/fax.png";
 import stopwatch from "../../public/stopwatch.png";
 import Link from "next/link";
+
 export default function Footer() {
   return (
     <div>
@@ -21,9 +22,16 @@ export default function Footer() {
         </div>
         <div className="sm:mx-auto">
           <span className="footer-title">HİZMETLERİMİZ</span>
-          <a className="link link-hover">Muayene Öncesi</a>
-          <a className="link link-hover">Muayene Sırasında</a>
-          <a className="link link-hover">Muayene Sonrasında</a>
+          <span className="link link-hover">
+            <Link href="/hizmetlerimiz">Paketlerimiz</Link>
+          </span>
+          <span className="link link-hover">
+            <Link href="/hakkimizda">Sık Sorulan Sorular</Link>
+          </span>
+          <span className="link link-hover">
+            <Link href="#clientComments">Kullanıcı Yorumları</Link>
+          </span>
+          {/* <span className="link link-hover"><Link href="/hizmetlerimiz">Muayene Öncesi</Link></span> */}
         </div>
         <div className="sm:mx-auto">
           <span className="footer-title">ŞİRKET PROFİLİ</span>
@@ -70,8 +78,6 @@ export default function Footer() {
               <p>9.00-19.00</p>
             </div>
           </div>
-
-          {/* <a className="link link-hover">Cookie policy</a> */}
         </div>
       </footer>
       <div className="flex flex-wrap items-center justify-between px-10 text-center min-h-8 bg-zinc-800 sm:px-20 xl:px-36 2xl:text-lg xl:h-12">

@@ -9,7 +9,6 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const handleNav = () => {
-    console.log("I got clicked", isNavOpen);
     setIsNavOpen((prev) => !prev);
   };
   return (
@@ -35,9 +34,10 @@ export default function Header() {
           <a>Register</a>
         </div>
       </div>
+
       <div className="sticky top-0 left-0 z-50 text-sm font-semibold bg-white xl:px-32  font-sans-serif navbar text-slate-900 backdrop-blur-2xl  lg:px-20 sm:h-[14vh]">
-        <div className="navbar-start">
-          <div className="dropdown">
+        <div className=" navbar-start">
+          <div className="">
             <label className="btn btn-ghost lg:hidden" onClick={handleNav}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,44 +54,56 @@ export default function Header() {
                 />
               </svg>
             </label>
-            <ul
+            <div
               className={`${
-                !isNavOpen ? `hidden` : `flex`
-              } p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52`}
+                isNavOpen
+                  ? `flex  flex-col  justify-evenly items-center absolute top-0 left-0 bg-gray-100 p-30  z-10  w-screen h-screen `
+                  : `hidden`
+              } overflow-y-hidden`}
             >
-              <li className="justify-between">
-                <Link href="/">ANA SAYFA</Link>
-              </li>
-              <li className="justify-between">
-                <Link href="/hizmetlerimiz">HİZMETLERİMİZ</Link>
-              </li>
-              <li className="justify-between">
-                <Link href="/hakkimizda">
-                  HAKKIMIZDA
-                  {/* <svg
-                  className="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
+              <div
+                className="absolute top-0 left-0 px-4 py-4"
+                onClick={() => setIsNavOpen(false)}
+              >
+                <svg
+                  className="w-8 h-8 text-slate-600"
                   viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                </svg> */}
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </div>
+              <ul
+                className="flex flex-col items-center justify-between min-h-[250px]"
+                onClick={() => setIsNavOpen(false)}
+              >
+                <Link href="/">
+                  <li className="my-8 uppercase border-b border-gray-400">
+                    ANA SAYFA
+                  </li>
                 </Link>
-                {/* <ul className="p-2 bg-base-100">
-                <li>
-                  <a>Hakkımızda</a>
-                </li>
-                <li>
-                  <a>Sık Sorulan Sorular</a>
-                </li>
-              </ul> */}
-              </li>
-
-              <li>
-                <Link href="iletisim">İLETİŞİM</Link>
-              </li>
-            </ul>
+                <Link href="/hizmetlerimiz">
+                  <li className="my-8 uppercase border-b border-gray-400">
+                    HİZMETLERİMİZ
+                  </li>
+                </Link>
+                <Link href="/hakkimizda">
+                  <li className="my-8 uppercase border-b border-gray-400">
+                    HAKKIMIZDA
+                  </li>
+                </Link>
+                <Link href="/iletisim">
+                  <li className="my-8 uppercase border-b border-gray-400">
+                    İLETİŞİM
+                  </li>
+                </Link>
+              </ul>
+            </div>
           </div>
           <Link href="/">
             <div className="w-16 scale-90 cursor-pointer ">
@@ -113,28 +125,8 @@ export default function Header() {
               <Link href="/hizmetlerimiz">HİZMETLERİMİZ</Link>
             </li>
             <li className="h-24">
-              <Link href="/hakkimizda">
-                HAKKIMIZDA
-                {/* <svg
-                className="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-              </svg> */}
-              </Link>
-              {/* <ul className="p-2 bg-base-100">
-              <li className="hover-bordered">
-                <Link href="/hakkimizda">Hakkımızda</Link>
-              </li>
-              <li className="hover-bordered">
-                <Link href="/faq">Sık Sorulan Sorular</Link>
-              </li>
-            </ul> */}
+              <Link href="/hakkimizda">HAKKIMIZDA</Link>
             </li>
-
             <li className="h-24">
               <Link href="/iletisim">İLETİŞİM</Link>
             </li>
